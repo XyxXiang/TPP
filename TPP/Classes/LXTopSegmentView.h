@@ -11,12 +11,12 @@
 
 @interface LXTopSegmentView : UIView
 
-+ (LXTopSegmentView *)getViewWithItemArray:(NSArray *)itemTitleArr
-                                     frame:(CGRect)frame
-                               selectIndex:(int)index
-                                  parentVC:(id)parentVC;
-
-
-- (void)didScrollAtOffsetX:(int)x maxOffSetWidth:(int)width;
+//+ (LXTopSegmentView *)getViewWithItemArray:(NSArray *)itemTitleArr
+//                                     frame:(CGRect)frame
+//                               selectIndex:(int)index
+//                                  parentVC:(id)parentVC;
+//
+//
+//- (void)didScrollAtOffsetX:(int)x maxOffSetWidth:(int)width;
 
 @end

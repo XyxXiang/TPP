@@ -11,50 +11,50 @@
 
 @interface LXTopSegmentView ()
 
-@property (nonatomic, weak) id parentVC;
+//@property (nonatomic, weak) id parentVC;
 
 @end
-
-static const int blueBackHeight = 2;
-
-//蓝条状底线占平分width的宽度  0.2
-static const float blueBackItemWidth = 0.4;
+//
+//static const int blueBackHeight = 2;
+//
+////蓝条状底线占平分width的宽度  0.2
+//static const float blueBackItemWidth = 0.4;
 
 @implementation LXTopSegmentView
 {
-    //所需要完成的元素标题数组
-    NSArray *titleArray;
-    //初始化时候给的Frame
-    CGRect frame;
-    //用来保存生成的Item的mutable数组
-    NSMutableArray *buttonItemArray;
-    //地下的一个蓝色的小阴影状态条目
-    UIView *blueStripView;
-    
-    //***当前选中的index
-    int currentSelectedIndex;
-    
-    int buttonWidth;
-    int buttonHeight;
-    int buttonOriginY;
+//    //所需要完成的元素标题数组
+//    NSArray *titleArray;
+//    //初始化时候给的Frame
+//    CGRect frame;
+//    //用来保存生成的Item的mutable数组
+//    NSMutableArray *buttonItemArray;
+//    //地下的一个蓝色的小阴影状态条目
+//    UIView *blueStripView;
+//    
+//    //***当前选中的index
+//    int currentSelectedIndex;
+//    
+//    int buttonWidth;
+//    int buttonHeight;
+//    int buttonOriginY;
     
 }
 
-- (instancetype)initWithItemArray:(NSArray *)itemTitleArr
-                            frame:(CGRect)frames
-                      selectIndex:(int)index
-                         parentVC:(id)parent
-{
-    self = [super init];
-    if (self) {
-//        titleArray = itemTitleArr;
-//        frame = frames;
-//        currentSelectedIndex = index;
-//        _parentVC = parent;
-//        [self justLoadView];
-    }
-    return self;
-}
+//- (instancetype)initWithItemArray:(NSArray *)itemTitleArr
+//                            frame:(CGRect)frames
+//                      selectIndex:(int)index
+//                         parentVC:(id)parent
+//{
+//    self = [super init];
+//    if (self) {
+////        titleArray = itemTitleArr;
+////        frame = frames;
+////        currentSelectedIndex = index;
+////        _parentVC = parent;
+////        [self justLoadView];
+//    }
+//    return self;
+//}
 //
 //- (void)justLoadView
 //{
