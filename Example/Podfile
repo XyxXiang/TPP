@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TPP_Example' do
+  pod 'TPP', :path => '../'
+
+  target 'TPP_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
