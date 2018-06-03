@@ -74,12 +74,12 @@ static const float blueBackItemWidth = 0.4;
         
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         
-#warning TODO 颜色
+        //#warning TODO 颜色
         
-//        [button setTitleColor:kColorTitleLight forState:UIControlStateNormal];
-//        [button setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
+        //        [button setTitleColor:kColorTitleLight forState:UIControlStateNormal];
+        //        [button setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
         
-//        [button setTitleColor:[UIColor redColor]forState:UIControlStateNormal];
+        //        [button setTitleColor:[UIColor redColor]forState:UIControlStateNormal];
         
         
         [button addTarget:self action:@selector(buttonTouched:) forControlEvents:UIControlEventTouchUpInside];
@@ -92,7 +92,7 @@ static const float blueBackItemWidth = 0.4;
         }
         [buttonItemArray addObject:button];
     }
-
+    
     blueStripView = [[UIView alloc] initWithFrame:CGRectMake(buttonWidth*((1-blueBackItemWidth)/2.0) + currentSelectedIndex*buttonWidth, CGRectGetHeight(frame) - blueBackHeight, buttonWidth*blueBackItemWidth, blueBackHeight)];
     blueStripView.layer.cornerRadius = blueBackHeight/2;
     blueStripView.backgroundColor = [UIColor orangeColor];
@@ -111,10 +111,10 @@ static const float blueBackItemWidth = 0.4;
     button.alpha = 1;
     
     [UIView animateWithDuration:.2 animations:^{
-        [blueStripView setFrame:CGRectMake(buttonWidth*((1-blueBackItemWidth)/2.0) + tag*buttonWidth, buttonHeight - blueBackHeight, buttonWidth*blueBackItemWidth, blueBackHeight)];
+        //        [blueStripView setFrame:CGRectMake(buttonWidth*((1-blueBackItemWidth)/2.0) + tag*buttonWidth, buttonHeight - blueBackHeight, buttonWidth*blueBackItemWidth, blueBackHeight)];
     }];
     if (self.parentVC) {
-//        [self.parentVC segementDidSelectAtIndex:tag];
+        //        [self.parentVC segementDidSelectAtIndex:tag];
     }
     
 }
@@ -129,7 +129,7 @@ static const float blueBackItemWidth = 0.4;
 
 - (void)didScrollAtOffsetX:(int)x maxOffSetWidth:(int)width
 {
-
+    
     int averageWidth = width/titleArray.count;  //每一份所占的宽度,width是整个scrollview的ContentSize的width
     int index = x/averageWidth;                 //目前的选择是在第几个index
     int offsetX = x % averageWidth;             //在这个index中的偏移量
@@ -154,8 +154,8 @@ static const float blueBackItemWidth = 0.4;
     }else if (rate > 0.5 && rate < 1)
     {
         [blueStripView setFrame:CGRectMake(buttonWidth*((1-blueBackItemWidth)/2.0) + index*buttonWidth + 2*(offsetX/(float)averageWidth - 0.5)*buttonWidth,
-                                          buttonOriginY,
-                                          2*(1- offsetX/(float)averageWidth)*buttonWidth + blueStripViewWidth,
+                                           buttonOriginY,
+                                           2*(1- offsetX/(float)averageWidth)*buttonWidth + blueStripViewWidth,
                                            blueBackHeight)];
         UIButton *button = buttonItemArray[index+1];
         button.alpha = rate;

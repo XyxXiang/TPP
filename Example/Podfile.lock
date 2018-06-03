@@ -1,5 +1,5 @@
 PODS:
-  - TPP (0.1.0)
+  - TPP (0.1.2)
 
 DEPENDENCIES:
   - TPP (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  TPP: f7127c8f33a90214e5867934f84c51ab2ca6589c
+  TPP: 8a48abad7f65e5a155bdd8fb37b4b5dfc73598b4
 
 PODFILE CHECKSUM: d6f14529467abcba78c4ac34a7551bfec6defe6a
 

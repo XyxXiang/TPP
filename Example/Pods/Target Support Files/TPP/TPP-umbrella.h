@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "LXTopSegmentView.h"
 
 FOUNDATION_EXPORT double TPPVersionNumber;
 FOUNDATION_EXPORT const unsigned char TPPVersionString[];
