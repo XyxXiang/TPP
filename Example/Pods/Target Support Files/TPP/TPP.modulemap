@@ -1,0 +1,6 @@
+framework module TPP {
+  umbrella header "TPP-umbrella.h"
+
+  export *
+  module * { export * }
+}
